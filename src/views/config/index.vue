@@ -1,6 +1,10 @@
 <template>
     <div>
-      <fc-designer ref="designer" height="calc(100vh - 40px)">
+      <fc-designer
+          :config="{disabled: ['field']}"
+          ref="designer"
+          height="calc(100vh - 40px)"
+      >
         <template slot="handle">
           <ElButton @click="getRule">GetRule</ElButton>
           <ElButton @click="getJson">GetJson</ElButton>
