@@ -3,6 +3,7 @@
       <fc-designer ref="designer">
         <template slot="handle">
           <ElButton @click="getRule">GetRule</ElButton>
+          <ElButton @click="getJson">GetJson</ElButton>
         </template>
       </fc-designer>
     </div>
@@ -26,6 +27,10 @@
       getRule() {
         const rule = this.$refs.designer.getRule()
         console.log('rule:', rule)
+      },
+      getJson() {
+        const json = this.$refs.designer.getJson()
+        console.log('json:', json)
       }
     }
   }
