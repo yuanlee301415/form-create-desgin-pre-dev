@@ -47,6 +47,22 @@ export const routes = [
         component: () => import('@/views/test/getData')
       }
     ]
+  },
+
+  { // Config
+    path: '/config',
+    component: Layout,
+    redirect: '/config',
+    children: [
+      {
+        path: '',
+        name: 'Config',
+        meta: {
+          title: 'Config'
+        },
+        component: () => import('@/views/config')
+      }
+    ]
   }
 ]
 
