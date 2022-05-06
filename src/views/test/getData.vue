@@ -15,7 +15,7 @@
   console.log(FcDesigner )
 
   export default {
-    name: 'FormCreateDesignerGetData',
+    name: 'GetData',
     components: {
       FcDesigner
     },

@@ -9,7 +9,7 @@
   console.log(FcDesigner )
 
   export default {
-    name: 'FormCreateDesignerImport',
+    name: 'Import',
     components: {
       FcDesigner
     },

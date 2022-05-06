@@ -21,51 +21,30 @@ export const routes = [
     ]
   },
 
-  { // FormCreate
-    path: '/form-create',
+  { // Test
+    path: '/test',
     component: Layout,
-    redirect: '/form-create/import',
-    name: 'FormCreate',
+    redirect: '/test/import',
+    name: 'Test',
     meta: {
-      title: 'FormCreate'
+      title: 'Test'
     },
     children: [
       {
         path: 'import',
-        name: 'FormCreateImport',
+        name: 'TestImport',
         meta: {
           title: '导入'
         },
-        component: () => import('@/views/form-create/import')
-      }
-    ]
-  },
-
-
-  { // FormCreateDesigner
-    path: '/form-create-designer',
-    component: Layout,
-    redirect: '/form-create-designer/import',
-    name: 'FormCreateDesigner',
-    meta: {
-      title: 'FormCreateDesigner'
-    },
-    children: [
-      {
-        path: 'import',
-        name: 'FormCreateDesignerImport',
-        meta: {
-          title: '导入'
-        },
-        component: () => import('@/views/form-create-designer/import')
+        component: () => import('@/views/test/import')
       },
       {
         path: 'get-data',
-        name: 'FormCreateDesignerGetData',
+        name: 'TestGetData',
         meta: {
           title: '获取数据'
         },
-        component: () => import('@/views/form-create-designer/getData')
+        component: () => import('@/views/test/getData')
       }
     ]
   }
