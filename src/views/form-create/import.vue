@@ -7,7 +7,7 @@
 <script>
   import formCreate from '@form-create/element-ui'
   export default {
-    name: 'Home',
+    name: 'FormCreateImport',
     components: {
       FormCreate: formCreate.$form()
     },
