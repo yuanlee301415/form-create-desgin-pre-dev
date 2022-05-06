@@ -4,6 +4,7 @@
         <template slot="handle">
           <ElButton @click="getRule">GetRule</ElButton>
           <ElButton @click="getJson">GetJson</ElButton>
+          <ElButton @click="getOption">GetOption</ElButton>
         </template>
       </fc-designer>
     </div>
@@ -31,6 +32,10 @@
       getJson() {
         const json = this.$refs.designer.getJson()
         console.log('json:', json)
+      },
+      getOption() {
+        const option = this.$refs.designer.getOption()
+        console.log('option:', option)
       }
     }
   }
