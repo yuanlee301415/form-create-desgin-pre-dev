@@ -53,11 +53,19 @@ export const routes = [
     children: [
       {
         path: 'import',
-        name: 'form-create-designer-import',
+        name: 'FormCreateDesignerImport',
         meta: {
           title: '导入'
         },
         component: () => import('@/views/form-create-designer/import')
+      },
+      {
+        path: 'get-data',
+        name: 'FormCreateDesignerGetData',
+        meta: {
+          title: '获取数据'
+        },
+        component: () => import('@/views/form-create-designer/getData')
       }
     ]
   }
