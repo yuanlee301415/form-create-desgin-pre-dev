@@ -25,14 +25,25 @@
       }
     },
     methods: {
+      /**
+       * 获取表单规则对象
+       */
       getRule() {
         const rule = this.$refs.designer.getRule()
         console.log('rule:', rule)
       },
+
+      /**
+       * 获取表单规则对象序列化字符串
+       */
       getJson() {
         const json = this.$refs.designer.getJson()
         console.log('json:', json)
       },
+
+      /**
+       * 获取表单全局匹配对象
+       */
       getOption() {
         const option = this.$refs.designer.getOption()
         console.log('option:', option)
