@@ -12,6 +12,8 @@
     "inspect:prod": "vue inspect --mode=production > dist/webpack.prod.js"
   },
   "dependencies": {
+    "@form-create/element-ui": "^2.5.20",
+    "element-ui": "2.15.6",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
   },

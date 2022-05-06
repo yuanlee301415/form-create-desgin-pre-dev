@@ -19,6 +19,26 @@ export const routes = [
         component: () => import('@/views/home')
       }
     ]
+  },
+
+  { // FormCreate
+    path: '/form-create',
+    component: Layout,
+    redirect: '/form-create/import',
+    name: 'FormCreate',
+    meta: {
+      title: 'FormCreate'
+    },
+    children: [
+      {
+        path: 'import',
+        name: 'FormCreateImport',
+        meta: {
+          title: '导入'
+        },
+        component: () => import('@/views/form-create/import')
+      }
+    ]
   }
 ]
 
